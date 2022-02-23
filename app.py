@@ -109,4 +109,4 @@ def transaction_summary_category(last_n_days):
 
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")  
+    app.run(host="localhost", port="9000", debug="True")  
