@@ -100,6 +100,7 @@ With this, you can filter out the data for last "n" days and get the total price
 ###### EXAMPLE :
 #
 > Getting total price for last ***10*** days.
+#
 > Request URL: `http://localhost:9000/transaction-summary-bySKU/10`
 #
 ###### Expected Response :
@@ -126,6 +127,7 @@ With this, you can filter out the data for last "n" days and get the total price
 ###### EXAMPLE :
 #
 > Getting total price for last ***10*** days.
+#
 >  Request URL: `http://localhost:9000/transaction-summary-bycategory/10`
 #
 ###### Expected Response :
