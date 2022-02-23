@@ -1,0 +1,19 @@
+Returns the total price for the SKUs based on given last_n_days
+---
+parameters:
+  - name: last_n_days
+    in: path
+    type: string
+    
+definitions:
+  last_n_days:
+    type: string
+  
+responses:
+  200:
+    description: Summarizes the total price based on SKUs
+     for last_n_days
+    schema:
+      $ref: '#/definitions/last_n_days'
+  404:
+    description: Server Unreachable 

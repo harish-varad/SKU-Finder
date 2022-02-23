@@ -1,0 +1,18 @@
+Returns the details based on given transaction id
+---
+parameters:
+  - name: transaction_id
+    in: path
+    type: string
+    
+definitions:
+  transaction_id:
+    type: string
+  
+responses:
+  200:
+    description: Filtered Transactions for given transaction_id
+    schema:
+      $ref: '#/definitions/transaction_id'
+  404:
+    description: Server Unreachable 
