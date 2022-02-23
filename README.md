@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/harish-varad/SKU-Finder)
 
-SKU Streamer is an API, developed in Python on Flask Framework. There are 3 end points in this api and complete guide to run it as a standalone .py / with docker container is given below.
+SKU Streamer is an API developed in Python on Flask Framework. 
+There are 3 end points in this api and complete guide to run it as a standalone .py or with docker container, is given below.
 
 **This Tutorial has two parts for Host (to start web service) and Client (to make rest calls to the web service). Please follow accordingly.**
 
@@ -10,8 +11,23 @@ SKU Streamer is an API, developed in Python on Flask Framework. There are 3 end 
 
 # Host (To start web-service)
 You have two methods to run the application,
-1. [Run with Native Python](#Run-with-Native-Python-Editor)
-2. [Run with Docker](#Run-with-Docker)
+
+1. [Run with Docker](#Run-with-Docker)
+2. [Run with Native Python](#Run-with-Native-Python)
+
+### Run-with-Docker
+
+1. Pull the docker image `harishvaradarajan/sku_streamer` from docker hub
+    ```sh
+    docker pull harishvaradarajan/sku_streamer
+    ```
+    
+2. Start the docker container (You may also directly run this command without running the above command)
+    ```sh
+    docker run -dp 9000:9000 harishvaradarajan/sku_streamer
+    ```
+
+
 ### Running-with-Native-Python
 
 Please follow the below steps to run on your favourite editor 
@@ -32,23 +48,22 @@ Please follow the below steps to run on your favourite editor
 5. You can access the API documentation on URL `http://localhost:9000/apidocs/`
 
 
-### Run-with-Docker
-
-1. Pull the docker image `harishvaradarajan/sku_streamer` from docker hub
-    ```sh
-    docker pull harishvaradarajan/sku_streamer
-    ```
-    
-2. Start the docker container (You may also directly run this)
-    ```sh
-    docker run -dp 9000:9000 harishvaradarajan/sku_streamer
-    ```
 
 # Client (To access the data through API calls)
 
+### APIs
+###### Endpoint 1
+> /transaction/<transaction_id>
+
+###### Endpoint 2
+> /transaction-summary-bySKU/<last_n_days>
+
+###### Endpoint 3
+> /transaction-summary-bycategory/<last_n_days>
+
 ## Swagger Documentation
 The swagger documentation is created to aid the usage of endpoints. 
-On your browser hit the below URL to try the APIs
+Once you start the service with any of the above methods, open your browser and hit the below URL to try the APIs
 **http://localhost:9000/apidocs/**
 
 # API Documentation
@@ -64,6 +79,7 @@ With this, you can get the  below details based on the Transaction ID that you p
 ###### EXAMPLE :
 #
 > Getting transaction details for the transaction_id : ***1***
+#
 > Request URL: `http://localhost:9000/transaction-summary-bySKU/1`
 #
 ###### Expected Response :
