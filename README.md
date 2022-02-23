@@ -51,7 +51,7 @@ Please follow the below steps to run on your favourite editor
 
 # Client (To access the data through API calls)
 
-### APIs
+### API Usage
 ###### Endpoint 1
 > /transaction/<transaction_id>
 
@@ -61,11 +61,15 @@ Please follow the below steps to run on your favourite editor
 ###### Endpoint 3
 > /transaction-summary-bycategory/<last_n_days>
 
-## Swagger Documentation
-The swagger documentation is created to aid the usage of endpoints. 
-Once you start the service with any of the above methods, open your browser and hit the below URL to try the APIs
-**http://localhost:9000/apidocs/**
-
+# Swagger Documentation
+#
+**The swagger documentation is created to aid the usage of endpoints.**
+#
+**Once you start the service with any of the above methods, open your browser and hit the below URL to try the APIs**
+#
+***http://localhost:9000/apidocs/***
+#
+#
 # API Documentation
 
 **This is a web service that has 3 endpoints, with which you will be able to get the SKU data and other related details**
