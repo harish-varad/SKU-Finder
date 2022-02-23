@@ -7,13 +7,18 @@ There are 3 end points in this api and complete guide to run it as a standalone 
 
 **This Tutorial has two parts for Host (to start web service) and Client (to make rest calls to the web service). Please follow accordingly.**
 
+# Table of Contents
+- **[Host](#Host)**
+- **[Client](#Client)**
+- **[Swagger-Documentation](#Swagger-Documentation)**
+- **[API-Documentation](#API-Documentation)**
 
-
-# Host (To start web-service)
+# Host 
+**(To start web-service)**
 You have two methods to run the application,
 
 1. [Run with Docker](#Run-with-Docker)
-2. [Run with Native Python](#Run-with-Native-Python)
+2. [Run with Native Python](#Running-with-Native-Python)
 
 ### Run-with-Docker
 
@@ -49,7 +54,8 @@ Please follow the below steps to run on your favourite editor
 
 
 
-# Client (To access the data through API calls)
+# Client 
+**(To access the data through API calls)**
 
 ### API Usage
 ###### Endpoint 1
@@ -61,7 +67,7 @@ Please follow the below steps to run on your favourite editor
 ###### Endpoint 3
 > /transaction-summary-bycategory/<last_n_days>
 
-# Swagger Documentation
+# Swagger-Documentation
 #
 **The swagger documentation is created to aid the usage of endpoints.**
 #
@@ -70,7 +76,7 @@ Please follow the below steps to run on your favourite editor
 ***http://localhost:9000/apidocs/***
 #
 #
-# API Documentation
+# API-Documentation
 
 **This is a web service that has 3 endpoints, with which you will be able to get the SKU data and other related details**
 
